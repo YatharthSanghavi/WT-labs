@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: fit-content;
+        }
+        input{
+            padding: 10px;
+            margin: 4px;
+        }
+        table{
+            background-color: aqua;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="ans" id="ans">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="addValue('7')">
+                    <input type="button" value="8" onclick="addValue('8')">
+                    <input type="button" value="9" onclick="addValue('9')">
+                    <input type="button" value="+" onclick="addValue('+')">
+                </td>
+            </tr>
+            <tr class="num">
+                <td>
+                    <input type="button" value="4" onclick="addValue('4')">
+                    <input type="button" value="5" onclick="addValue('5')">
+                    <input type="button" value="6" onclick="addValue('6')">
+                    <input type="button" value="-" onclick="addValue('-')">
+                </td>
+            </tr>
+            <tr class="num">
+                <td>
+                    <input type="button" value="1" onclick="addValue('1')">
+                    <input type="button" value="2" onclick="addValue('2')">
+                    <input type="button" value="3" onclick="addValue('3')">
+                    <input type="button" value="*" onclick="addValue('*')">
+                </td>
+            </tr>
+            <tr class="num">
+                <td>
+                    <input type="button" value="C" onclick="clear1()">
+                    <input type="button" value="0" onclick="addValue('0')">
+                    <input type="button" value="=" onclick="cal()">
+                    <input type="button" value="/" onclick="addValue('/')">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        let value = document.getElementById('ans')
+        function addValue(value1){
+            value.value+=value1
+        }
+        function clear1(){
+            value.value=" "
+        }
+        function cal(){
+            value.value=eval(value.value)
+        }
+    </script>
+</body>
+</html>

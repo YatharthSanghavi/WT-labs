@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let f = parseInt(prompt("enter your number: "))
+        let a = [0,1]
+        let b=0,c=1,d=0
+        for(let i = 1; i<=f-2;i++){
+            b = d+c
+            d=c
+            c=b
+            a.push(b)
+        }
+        alert(a)
+    </script>
+</body>
+</html>

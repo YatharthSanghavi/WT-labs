@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">roll</label><br>
+    <label for="">1</label>
+    <input type="checkbox" name="roll1" id="roll1" value="1"><br>
+    <label for="">2</label>
+    <input type="checkbox" name="roll2" id="roll2"><br>
+    <label for="">3</label>
+    <input type="checkbox" name="roll3" id="roll3"><br>
+    <label for="">4</label>
+    <input type="checkbox" name="roll4" id="roll4"><br>
+    <label for="">5</label>
+    <input type="checkbox" name="roll5" id="roll5"><br>
+    <label for="">6</label>
+    <input type="checkbox" name="roll6" id="roll6"><br>
+    <button onclick="check()">Submit</button>
+    <p>
+        selected number are: 
+    </p><br>
+    <p id="p"></p>
+    <script>
+        function check(){
+        let arr=[]
+        const a = document.getElementById("roll1")
+        if(a.checked){
+            arr.push(a.value)
+        }
+        // let p = document.getElementById("p")
+        // p.textContent=b
+
+        alert(arr)
+    }
+    </script>
+</body>
+</html>

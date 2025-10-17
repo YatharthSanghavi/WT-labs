@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        let a = parseInt(prompt("enter a: "))
+        let b = parseInt(prompt("enter b: "))
+        let sym = prompt("enter +: ")
+        let res
+        let s = true
+        switch (sym) {
+            case '+':
+                res = a + b
+                break
+            case '-':
+                res =a-b
+                break
+            case '/':
+                res = a/b
+                break
+            case '%':
+                res = a%b
+                break
+            case '*':
+                res = a*b
+                break
+            default:
+                break
+        }
+        alert(res)
+    </script>
+</body>
+
+</html>

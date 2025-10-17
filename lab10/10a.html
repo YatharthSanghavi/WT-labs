@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red
+        }
+        .logo{
+            float: left;
+            height: 5vh;
+            width: 20%;
+            border: 2px solid red;
+            text-align: center;
+            align-content: center;
+        }
+        .navbar{
+            height: 5vh;
+            width: 100%;  
+            border: 2px solid blue;
+            text-align: right;
+        }    
+        .sidebar{
+            float:left;
+            height: 100vh;
+            width: 20%;
+            border: 2px solid rgb(255, 255, 255); 
+            background-color: rgb(191, 34, 34);
+        }
+        @media (min-width:1024px){
+            body{
+                background-color: white;
+            }
+        }
+        @media (min-width:601px) and (max-width:1024px){
+            body{
+                background-color: red;
+            }
+            .logo{
+                color: white;
+            }
+            a{
+                color: white;
+            }
+            .sidebar{
+                background-color: chartreuse;
+            }    
+        }
+        @media (max-width:600px){
+            body{
+                background-color: blue;
+            }
+            .logo{
+                color: white;
+                text-align: justify;
+            }
+            a{
+                color: white;
+            }
+            .sidebar{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Logo here</div>
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="sidebar">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

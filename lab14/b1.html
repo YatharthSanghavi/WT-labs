@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lengtharr = parseInt(prompt("enter length of array: "))
+        let arr = [lengtharr]
+        for(let i=0;i<lengtharr; i++){
+            arr[i] = parseInt(prompt(`enter number for index ${i+1}`))
+        }
+        function sortarr(arr){
+            for(let i = 0 ; i<lengtharr ; i++){
+                if(arr[i]>arr[i+1]){
+                    temp = arr[j]
+                    arr[j] = arr[j+1]
+                    arr[j+1] = temp
+                }
+                sortarr(arr)
+            }
+        }
+        alert(arr)
+    </script>
+</body>
+</html>

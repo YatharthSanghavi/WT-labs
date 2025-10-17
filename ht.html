@@ -1,0 +1,22 @@
+// Student object with nested properties and array of marks
+const student = {
+  name: 'Alice Johnson',
+  age: 20,
+  course: {
+    subject: 'Computer Science',
+    year: 2
+  },
+  marks: [88, 92, 76, 85, 90]
+};
+
+// Object destructuring
+const { name, course: { subject } } = student;
+
+// Array destructuring
+const [firstMark, secondMark] = student.marks;
+
+// Display in console
+console.log(`Name: ${name}`);
+console.log(`Subject: ${subject}`);
+console.log(`First Mark: ${firstMark}`);
+console.log(`Second Mark: ${secondMark}`);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("enter your first number: ")
+        let b = prompt("enter your second number: ")
+        for(i=a;i<=b;i++){
+            prime(i)
+        }
+        function prime(i){
+            let temp = 0
+            for(let j = 1 ; j<=i; j++){
+                if(i%j == 0){
+                    temp+=1
+                }
+            }
+            if (temp==2) {
+                console.log(i)
+            }
+        }
+    </script>
+</body>
+</html>

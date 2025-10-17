@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Combined Pseudo-Class & Pseudo-Element</title>
+  <style>
+    /* Change only the first letter when paragraph is hovered */
+    p:hover::first-letter {
+      color: #9b59b6;
+      font-size: 2em;
+    }
+
+    /* Basic paragraph styling */
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>3. Combined Pseudo-Class and Pseudo-Element</h2>
+
+  <p>
+    Hover over this paragraph and watch the first letter change color and size! This demonstrates combining pseudo-classes and pseudo-elements in CSS for interactive styling.
+  </p>
+
+</body>
+</html>

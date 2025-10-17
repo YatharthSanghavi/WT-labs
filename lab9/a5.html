@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 150vh;
+            margin: 20vh;
+            background-color: black;
+        }
+        .inside{
+            position: relative;
+            height: 10vh;
+            width: 10vh;
+            border-radius: 75px;
+            background-color: aqua;
+            animation: const 5s ease-in-out 1s infinite reverse;
+        }
+        @keyframes const {
+            0%{
+                top: 0vh;
+                left: 0vh;
+            }
+            25%{
+                top: 0vh;
+                left: 140vh;
+            }
+            50%{
+                top: 40vh;
+                left: 140vh;
+            }
+            75%{
+                top: 40vh;
+                left: 0vh;
+            }
+            100%{
+                top: 0vh;
+                left: 0vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inside"></div>
+    </div>
+</body>
+</html>
