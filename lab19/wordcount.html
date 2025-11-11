@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <textarea name="" id="texta"></textarea>
+    <p id="word"></p>
+    <button id="bt">count</button>
+    <script>
+        $(document).ready(() => {
+            $('#bt').click(function () {
+                var textcontent = $('#texta').val();
+                var trim = $.trim(textcontent);
+                var wordsArray = trim.split(/\s+/);
+
+                // Handle the case of an empty textarea resulting in [""]
+                if (trim === "") {
+                    var wordCount = 0;
+                } else {
+                    var wordCount = wordsArray.length;
+                }
+
+                $('#word').text(wordCount);
+            })
+        })
+    </script>
+</body>
+
+</html>
