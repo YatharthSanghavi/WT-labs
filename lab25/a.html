@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        fieldset {
+            border: 2px solid #ff0202;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+        }
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>    
+    <form style="text-align: center; align-items: center;">
+        <fieldset>
+            <legend>
+                Student Registration Form
+            </legend>    
+            
+            <table style="margin: auto; border: 1px solid black; padding: 10px; width: 50%;">
+                <tr>
+                    <th>student registration</th>
+                </tr>
+            <tr>
+                <td><label for="name">fullName</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobno">Mobile no</label>
+                </td>
+                <td>
+                    <input type="tel" name="mobno" id="mobno"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea name="address" id="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nation">Nationality</label>
+                </td>
+                <td>
+                    <input type="text" name="nation" id="nation">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date of Birth</label>
+                </td>
+                <td>
+                    <input type="date" name="dob" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender">MALE
+                    <input type="radio" name="gender" id="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="degree">Highest Degree</label>
+                </td>
+                <td>
+                    <select name="degree" id="degree">
+                        <option value="" disabled>select degree</option>
+                        <option value="bca">BCA</option>
+                        <option value="Mca">MCA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cpi">CPI</label>
+                </td>
+                <td>
+                    <input type="text" name="cpi" id="cpi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="uni">University</label>
+                </td>
+                <td>
+                    <input type="text" name="uni" id="uni">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="year">Passing year</label>
+                </td>
+                <td>
+                    <select name="year" id="year">
+                        <option value="" disabled>select year</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <button type="button">submit</button>
+                    <button type="button">cancel</button>
+                </td>
+            </tr>
+            </table>
+        </fieldset>
+
+        <!--covid-->
+        <fieldset>
+            <legend>
+                Covid
+            </legend>    
+            
+            <table style="margin: auto; border: 1px solid black; padding: 10px; width: 50%;">
+                <tr>
+                    <th>Covid</th>
+                </tr>
+            <tr>
+                <td><label for="fname">firstname</label></td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">lastname</label></td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Adhar">Adhaar no.</label>
+                </td>
+                <td>
+                    <input type="tel" name="adhar" id="adhar"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="vac">Vaccine name</label>
+                </td>
+                <td>
+                    <select name="vac" id="vac">
+                        <option value="" selected disabled>select vaccine</option>
+                        <option value="covid">covid</option>
+                        <option value="covid1">covid1</option>
+                        <option value="covid2">covid2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="vacp">Vaccine place</label>
+                </td>
+                <td>
+                    <select name="vacp" id="vacp">
+                        <option value="" selected disabled>select place</option>
+                        <option value="rajkot">rajkot</option>
+                        <option value="surat">surat</option>
+                        <option value="goa">goa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="datev">Date of vaccine</label>
+                </td>
+                <td>
+                    <input type="date" name="datev" id="datev">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="vno">Vacine number</label>
+                </td>
+                <td>
+                    <input type="text" name="vno" id="vno">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button">submit</button>
+                    <button type="button">cancel</button>
+                </td>
+            </tr>
+            </table>
+        </fieldset>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

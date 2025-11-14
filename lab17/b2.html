@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="arrayin">
+    <button type="button" onclick="insert()">insert</button>
+    <button type="button" onclick="remove()">remove</button>
+    <button type="button" onclick="display()">display</button>
+    <button type="button" onclick="update()">update</button>
+    <p id="result"></p>
+    <script>
+        let arr = []
+        function insert(){
+            let input = document.getElementById("arrayin").value
+            arr.push(input)
+            document.getElementById("arrayin").value = ""
+        }
+        function remove(){
+            let i = parseInt(prompt("Enter index to remove:"))
+            if(i >= 0 && i < arr.length)
+                arr.splice(i, 1)
+            else
+                alert("Index out of bounds")
+            display()
+        }
+        function display(){
+            document.getElementById("result").innerText = arr.join(", ")
+        }
+        function update(){
+            let i = parseInt(prompt("Enter index to update:"))
+            let newValue = prompt("Enter new value:")
+            if(i >= 0 && i < arr.length)
+                arr[i] = newValue
+            else
+                alert("Index out of bounds")
+            display()
+        }
+    </script>
+</body>
+</html>

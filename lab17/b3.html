@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">this is the heading</h1>
+    <button type="button" onclick="date()">display date</button>
+    <p id="p"></p>
+    <button type="button" onclick="change()" id="b" value='red'>Red</button>
+    <script>
+        let h = document.getElementById('h')
+        let p = document.getElementById('p')
+        let b = document.getElementById('b')
+        const now = new Date()
+        h.addEventListener('mouseover',function(){
+            h.style.backgroundColor='red'
+        })
+        h.addEventListener('mouseout',function(){
+            h.style.backgroundColor='blue'
+        })
+        function date(){
+            p.innerHTML=now
+        }
+        function change(){
+            if(b.value=='red'){
+                document.body.style.backgroundColor='red'
+                b.value='yellow'
+                b.innerHTML='Yellow'
+            }else{
+                document.body.style.backgroundColor='yellow'
+                b.value='red'
+                b.innerHTML='Red'
+            }
+        }
+    </script>
+</body>
+</html>

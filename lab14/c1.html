@@ -7,11 +7,15 @@
 </head>
 <body>
     <script>
-         
+        let input = prompt("enter string: ")
+        let index = prompt("enter word: ")
+        let arr = input.split(" ")
+        alert(arr)
+        let ans
+        for(let i = 0; i < arr.length; i++){
+            ans = arr.indexOf(index)
+        }
+        alert(ans)
     </script>
 </body>
 </html>
-
-i   j  => i<->j
-{ij 
-j   i} => pivot<-> j 

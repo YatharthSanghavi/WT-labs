@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(127, 224, 118);
+            margin: auto;
+            height: 100%;
+            width: 30vw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: cursive;
+            font-size: 2rem;
+            border-radius: 10px;
+        }
+        input{
+            width: 90%;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 10px;
+            border: 1px solid #000000;
+            font-size: 1rem;
+        }
+        button{
+            font-family: cursive;
+            font-size: 2rem;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 10px;
+            border: 1px solid #000000;
+            font-size: 1rem;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #p{
+            font-family: cursive;
+            font-size: 3rem;
+            padding: 5px;
+            margin: 5px;
+            font-size: 1rem;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div>
+            <h2>Student Registration Form</h2>
+        </div> 
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="name" id="name">
+            <label for="Email">Email: </label>
+            <input type="email" name="email" id="email" class="email" required>
+            <label for="Password">Password: </label>
+            <input type="password" name="pass" id="pass" required>
+            <button type="button" onclick="check()">Submit</button>
+            <div>
+                <p id="p"> </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function check(){
+            let email = document.getElementById('email').value
+            let pass = document.getElementById('pass').value
+            let p = document.getElementById('p')
+            let emaila = /^[^\s@]+@[^\s@]+\.gmail+\.[^\s@]+$/
+            let passa = "admin"
+            if(emaila.test(email) && pass === passa){
+                p.textContent="login sucessfull"
+            }
+            else{
+                p.textContent="not login"
+            }
+        }
+    </script>
+</body>
+</html>
